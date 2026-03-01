@@ -201,3 +201,8 @@
 .process__step:hover .grid-wrapper {
     grid-template-rows: 1fr;
 }
+
+.projects__heading {
+    font-weight: 700;
+    text-transform: uppercase;
+}
