@@ -179,27 +179,62 @@
       </section>
       <section class="contact inverse-colors" id="contact">
         <div class="container">
-          <p>
+          <p class="medium-text">
             Du début à la fin, mon objectif est de vous offrir une expérience
             fluide, efficace et axée sur la création de valeur.
           </p>
-          <p>
+          <p class="large-text">
             Créons ensemble une solution qui fonctionne, pour vous et vos
             utilisateurs.
           </p>
           <form action="" class="contact-form">
-            <input type="email" placeholder="Votre adresse e-mail" required />
+            <div class="contact-form__name-container flex-wrapper">
+              <div class="contact-form__name-part">
+                <label for="first-name" class="contact-form__field-name"
+                  >Prénom<span>(Obligatoire)</span></label
+                >
+                <input
+                  type="text"
+                  class="contact-form__field small-text"
+                  name="first-name"
+                />
+              </div>
+              <div class="contact-form__name-part">
+                <label for="last-name" class="contact-form__field-name"
+                  >Last name <span>(Obligatoire)</span></label
+                >
+                <input
+                  type="text"
+                  class="contact-form__field small-text"
+                  name="last-name"
+                />
+              </div>
+            </div>
+            <label for="company-name" class="contact-form__field-name"></label>
             <input
               type="text"
-              placeholder="Votre nom ou celui de votre entreprise"
-              required
+              name="company-name"
+              class="small-text contact-form__field"
             />
+            <label for="email-address" class="contact-form__field-name"
+              >E-mail address <span>(Obligatoire)</span></label
+            >
+            <input
+              type="email"
+              name="email-address"
+              class="small-text contact-form__field"
+            />
+            <label for="contact-message" class="contact-form__field-name"
+              >Votre message <span>(Obligatoire)</span></label
+            >
             <textarea
-              name="content"
-              id="content"
-              placeholder="Comment puis-je vous aider?"
+              name="contact-message"
+              class="small-text contact-form__field"
+              id="contact-message"
             ></textarea>
-            <button type="submit">Envoyer</button>
+            <button class="small-text contact-form__button" type="submit">
+              Envoyer
+            </button>
           </form>
         </div>
       </section>
