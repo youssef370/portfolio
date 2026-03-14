@@ -1,4 +1,7 @@
-const body = document.querySelector("body");
+const steps = document.querySelectorAll(".process__step");
 
-body.style.backgroundColor = "";
-
+steps.forEach((step) => {
+    step.addEventListener("click", () => {
+        step.classList.toggle("process__step--opacity");
+    });
+});
